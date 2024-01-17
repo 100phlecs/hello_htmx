@@ -1,5 +1,6 @@
 defmodule HelloHtmxWeb.Router do
   use HelloHtmxWeb, :router
+  alias HanziHeroWeb.HTMXRedirect
 
   pipeline :browser do
     plug :accepts, ["html"]
@@ -8,6 +9,7 @@ defmodule HelloHtmxWeb.Router do
     plug :put_root_layout, html: {HelloHtmxWeb.Layouts, :root}
     plug :protect_from_forgery
     plug :put_secure_browser_headers
+    plug HTMXRedirect
   end
 
   pipeline :api do
