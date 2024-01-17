@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "htmx.org": "^1.9.10",
+    "topbar": "github:100phlecs/topbar"
+  }
+}
